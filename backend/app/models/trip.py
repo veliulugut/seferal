@@ -26,6 +26,7 @@ class Trip(BaseModel):
     sefer_tipi: Optional[str] = None
     otobus_tipi: Optional[str] = None
     fiyat: Optional[str] = None
+    firma: Optional[str] = None
     koltuk_plani: Optional[SeatPlan] = None
     error: Optional[str] = None
 

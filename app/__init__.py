@@ -1,2 +1,0 @@
-# SeferAI - MCP Backend
-

@@ -3,6 +3,8 @@ from datetime import datetime
 from app.scraper.base import BaseScraper
 from app.models.trip import Trip, SearchResponse
 from app.scraper.sarikiz import SarikizScraper
+from app.scraper.uludag import UludagScraper
+from app.scraper.anadolu import AnadoluScraper
 
 
 class ScraperManager:
@@ -13,6 +15,8 @@ class ScraperManager:
     def __init__(self):
         self._scrapers = {
             "sarikiz": SarikizScraper,
+            "uludag": UludagScraper,
+            "anadolu": AnadoluScraper,
         }
     
     def get_scraper(self, company: str, headless: bool = False) -> Optional[BaseScraper]:
